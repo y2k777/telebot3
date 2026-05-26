@@ -35,6 +35,8 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 LEAKOSINT_API_KEY = os.getenv("LEAKOSINT_API_KEY")
 
+LEAKOSINT_API_URL = "https://leakosintapi.com/"
+
 ADMIN_IDS = {
     8910478622
 }
