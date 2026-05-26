@@ -844,7 +844,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             draft["step"] = "note"
 
             await update.message.reply_text(
-                "📝 Search Term (EG: Name, Phone, System ID)"
+                "📝 Search Term (EG: John smith, test@mail.com, IDnumber, )"
             )
 
             return
