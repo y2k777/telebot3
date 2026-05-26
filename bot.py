@@ -637,7 +637,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             text="""
 🔎 OSINT LOOKUP
 
-Send the following:
+Send one of the following:
 • Email
 • Phone
 • Username
