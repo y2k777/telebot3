@@ -22,7 +22,7 @@ from telegram.ext import (
 # CONFIG
 # =========================================================
 
-BOT_TOKEN = "os.getenv("BOT_TOKEN")"
+BOT_TOKEN = os.getenv("BOT_TOKEN"
 
 STAFF_CHAT_ID = -1003941910641
 
@@ -30,9 +30,9 @@ GROUP_LINK = "https://t.me/cornballsv2"
 
 LTC_ADDRESS = "ltc1qwzqh92kggfelh59f8jzud2qkxr8xemfu29mcrw"
 
-LEAKOSINT_API_KEY = os.getenv("LEAKOSINT_API_KEY")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-LEAKOSINT_API_URL = "https://leakosintapi.com/"
+LEAKOSINT_API_KEY = os.getenv("LEAKOSINT_API_KEY")
 
 ADMIN_IDS = {
     8910478622
