@@ -104,7 +104,7 @@ PRODUCTS = {
 
     "full": {
         "name": "Full Background Report",
-        "price": "0.068 LTC"
+        "price": "0.68 LTC"
     },
 
     "phone": {
@@ -119,17 +119,17 @@ PRODUCTS = {
 
     "aihoto": {
         "name": "AI Photo Geo-Location Report",
-        "price": "0.095 LTC"
+        "price": "0.40 LTC"
     },
 
     "db": {
         "name": "Data Breach Report",
-        "price": "0.020 LTC"
+        "price": "0.20 LTC"
     },
 
     "creport": {
         "name": "Credit Report",
-        "price": "0.032 LTC"
+        "price": "0.32 LTC"
     },
 
     "dl": {
@@ -144,22 +144,22 @@ PRODUCTS = {
 
     "npd": {
         "name": "NPD",
-        "price": "0.18 LTC"
+        "price": "0.15 LTC"
     },
 
     "logs": {
         "name": "Website ULP Logs",
-        "price": "0.015 LTC"
+        "price": "0.15 LTC"
     },
 
     "discord": {
         "name": "Discord Lookup",
-        "price": "0.019 LTC"
+        "price": "0.10 LTC"
     },
 
     "aiperson": {
         "name": "AI Person Search",
-        "price": "0.035 LTC"
+        "price": "0.35 LTC"
     },
 
     "handbook": {
@@ -351,8 +351,8 @@ def format_lookup_results(data):
         total_hits += matches
 
         text += (
-            f"📂 {db_name}\n"
-            f"📊 Matches: {matches}\n"
+            f"📂 leaked database: {db_name}\n"
+            f"📊 lookup matches: {matches}\n"
         )
 
         records = db_data.get("Data", [])
@@ -552,7 +552,6 @@ A: Yes, DISCLAIMER: We do not provide sensitive information to the public. All i
 
 💬 Support
 @SlowlyFallingDown
-@feario
 """
 
 # =========================================================
@@ -895,7 +894,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 👤 Your Username:
 {draft['username']}
-
 📝 Search Term:
 {draft['note']}
 
@@ -929,16 +927,13 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 🆕 NEW ORDER
 
 🆔 {order_id}
-
 👤 @{user.username}
 
 📦 {draft['product']}
-
 💰 {draft['amount']}
 
 👤 Username:
 {draft['username']}
-
 📝 Search Term:
 {draft['note']}
 
