@@ -566,7 +566,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await msg.edit_text(f"❌ Failed: {e}")
         return
 
-    # ── Order Status ────────────────────────────────────────
+# ── Order Status ────────────────────────────────────────
     if user.id in status_waiting:
         status_waiting.pop(user.id)
         row = cursor.execute(
